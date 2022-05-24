@@ -1,0 +1,14 @@
+.navbar {
+  padding: 25px;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-around;
+  width: 360px;
+}

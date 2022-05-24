@@ -1,0 +1,18 @@
+.row.portfolio {
+  margin-bottom: 100px;
+}
+
+.portfolio .column-left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding-right: 25px;
+}
+
+.portfolio .column-right {
+  width: 50%;
+}
+
+.portfolio .card img {
+  border-radius: 20px;
+}
