@@ -1,13 +1,5 @@
 .greetings .column-left {
-  align-self: center;
-  width: 70%;
-  display: flex;
-  flex-direction: column;
-  padding-right: 100px;
-}
-
-.greetings .column-right {
-  width: 30%;
+  margin-bottom: 50px;
 }
 
 .cta-buttons {
@@ -19,16 +11,23 @@
   margin-right: 15px;
 }
 
+.greetings .column-right {
+  max-width: 250px;
+  text-align: center;
+  margin: auto;
+}
+
 .greetings .profile-pic {
-  position: relative;
+  margin: 0 auto 50px;
 }
 
 .greetings .column-right.profile-pic img {
   border-radius: 50%;
+  margin: auto;
   /* box-shadow: -25px -50px 0px 24px #ff8c4d; */
 }
 
-.greetings .profile-pic:before {
+/* .greetings .profile-pic:before {
   position: absolute;
   border-radius: 50%;
   z-index: -1;
@@ -38,4 +37,20 @@
   height: 320px;
   background: linear-gradient(#ff8c4d, #f4494e);
   content: '';
+} */
+
+@media only screen and (min-width: 768px) {
+  .greetings .column-left {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    /* padding-right: 100px; */
+    margin-bottom: unset;
+  }
+
+  .greetings .column-right {
+    width: 30%;
+    margin: auto;
+  }
 }

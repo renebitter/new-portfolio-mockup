@@ -31,12 +31,17 @@
     <div class="navbar" id="navbar">
         <div class="container">
             <a href="#" class="logo">Logo</a>
-            <nav class="nav-menu">
-                <a href="#about">About</a>
-                <a href="#portfolio">Portfolio</a>
-                <a href="#blog">Blog</a>
-                <a href="#">Contact</a>
+            <nav class="nav-menu" id="navMenu">
+                <div class="link-wrapper">
+                    <a href="#about">About</a>
+                    <a href="#portfolio">Portfolio</a>
+                    <a href="#blog">Blog</a>
+                    <a href="#">Contact</a>
+                </div>
             </nav>
+            <a href="javascript:void(0);" class="icon" onclick="navMenu()">
+                <i class="fa fa-bars"></i>
+            </a>
         </div>
     </div>
     <!-- NAVBAR END  -->
@@ -46,19 +51,19 @@
         <div class="container">
             <div class="row">
 
+                <div class="column-right profile-pic">
+                    <img src="/foto.jfif" alt="">
+                </div>
+
                 <div class="column-left">
                     <h3>Hi, my name is Rene.</h3>
                     <h1>I’m a Frontend Developer mainly focusing on React having also worked on Shopware projects.
                     </h1>
-                    <p> I'm also fluent in English, German, Portuguese and Javascript :)</p>
+                    <p> I'm fluent in English, German, Portuguese and Javascript :)</p>
                     <div class="cta-buttons">
                         <a href="#portfolio" class="btn btn-outlined">My Work</a>
                         <a href="#" class="btn btn-filled">Let's Talk</a>
                     </div>
-                </div>
-
-                <div class="column-right profile-pic">
-                    <img src="/foto.jfif" alt="">
                 </div>
 
             </div>
@@ -273,13 +278,24 @@
 </body>
 <script>
     window.onscroll = function () { fixNavbar() };
-    var navbar = document.getElementById("navbar");
+    const navbar = document.getElementById("navbar");
 
     function fixNavbar() {
         if (window.pageYOffset >= 400) {
             navbar.classList.add("sticky")
         } else {
             navbar.classList.remove("sticky");
+        }
+    }
+</script>
+
+<script>
+    function navMenu() {
+        var x = document.getElementById("navMenu");
+        if (x.className === "nav-menu") {
+            x.className += " responsive";
+        } else {
+            x.className = "nav-menu";
         }
     }
 </script>

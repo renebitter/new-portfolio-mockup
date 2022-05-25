@@ -3,6 +3,7 @@
   height: 45px;
   width: 100%;
   transition: ease 1s;
+  position: relative;
 }
 
 .navbar a {
@@ -22,9 +23,34 @@
 }
 
 .nav-menu {
-  display: flex;
-  justify-content: space-around;
-  width: 360px;
+  display: none;
+}
+
+.nav-menu .link-wrapper {
+  padding: 0 25px 25px;
+}
+
+.nav-menu.responsive {
+  width: 100%;
+  display: block;
+  position: absolute;
+  text-align: right;
+  right: 0;
+  top: 45px;
+  width: 100%;
+  background-color: hsla(0, 0%, 100%, 0.95);
+  /* box-shadow: 0 6px 30px 2px rgb(0 0 0 / 3%), 0 3px 15px 1px rgb(0 0 0 / 2%),
+    0 1px 8px 1px rgb(0 0 0 / 1%); */
+}
+
+.nav-menu.responsive .icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.nav-menu.responsive a {
+  display: block;
 }
 
 .sticky {
@@ -34,4 +60,30 @@
   background-color: hsla(0, 0%, 100%, 0.95);
   box-shadow: 0 6px 30px 2px rgb(0 0 0 / 3%), 0 3px 15px 1px rgb(0 0 0 / 2%),
     0 1px 8px 1px rgb(0 0 0 / 1%);
+}
+
+@media only screen and (min-width: 768px) {
+  .nav-menu.responsive {
+    position: unset;
+    display: flex;
+    justify-content: space-around;
+    width: 360px;
+  }
+
+  .nav-menu {
+    display: flex;
+    justify-content: space-around;
+    width: 360px;
+  }
+
+  .nav-menu .link-wrapper {
+    padding: unset;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  .navbar .icon {
+    display: none;
+  }
 }
