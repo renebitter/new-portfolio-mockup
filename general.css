@@ -2,6 +2,14 @@
   font-family: 'Poppins', sans-serif;
 }
 
+body {
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 h3,
 p {
   margin: 0;
@@ -9,15 +17,18 @@ p {
 
 a {
   text-decoration: none;
+  color: #000;
 }
 
 .btn {
   border-radius: 5px;
   padding: 15px 25px;
-  box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
+  box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%),
+    0 1px 5px 0 rgb(0 0 0 / 20%);
 }
 
 .btn-outlined {
+  background-color: #fff;
   color: #fd814d;
   border: 1px solid #fd814d;
 }

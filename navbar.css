@@ -1,14 +1,37 @@
 .navbar {
-  padding: 25px;
+  z-index: 99;
+  height: 45px;
+  width: 100%;
+  transition: ease 1s;
+}
+
+.navbar a {
+  color: #6e6d7a;
+}
+
+.navbar a:hover {
+  color: #000;
 }
 
 .navbar .container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 0 25px;
 }
 
 .nav-menu {
   display: flex;
   justify-content: space-around;
   width: 360px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  color: red;
+  background-color: hsla(0, 0%, 100%, 0.95);
+  box-shadow: 0 6px 30px 2px rgb(0 0 0 / 3%), 0 3px 15px 1px rgb(0 0 0 / 2%),
+    0 1px 8px 1px rgb(0 0 0 / 1%);
 }

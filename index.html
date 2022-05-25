@@ -6,26 +6,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/general.css" />
-    <link rel="stylesheet" href="/greeting.css" />
     <link rel="stylesheet" href="/navbar.css" />
+    <link rel="stylesheet" href="/greeting.css" />
     <link rel="stylesheet" href="/portfolio.css" />
+    <link rel="stylesheet" href="/about.css" />
+    <link rel="stylesheet" href="/blog.css" />
+    <link rel="stylesheet" href="/footer.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
     <title>Rene Bitter &ltWeb Developer /&gt</title>
+
+
+
 </head>
 
 <body>
     <!-- NAVBAR  -->
-    <div class="navbar">
+    <div class="navbar" id="navbar">
         <div class="container">
             <a href="#" class="logo">Logo</a>
             <nav class="nav-menu">
-                <a href="#">About</a>
-                <a href="#">Portfolio</a>
-                <a href="#">Blog</a>
+                <a href="#about">About</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#blog">Blog</a>
                 <a href="#">Contact</a>
             </nav>
         </div>
@@ -43,7 +52,7 @@
                     </h1>
                     <p> I'm also fluent in English, German, Portuguese and Javascript :)</p>
                     <div class="cta-buttons">
-                        <a href="#" class="btn btn-outlined">My Work</a>
+                        <a href="#portfolio" class="btn btn-outlined">My Work</a>
                         <a href="#" class="btn btn-filled">Let's Talk</a>
                     </div>
                 </div>
@@ -58,74 +67,83 @@
     <!-- GREETING END  -->
 
     <!-- PORTFOLIO  -->
-    <section class="portfolio">
+    <section class="portfolio" id="portfolio">
         <div class="container">
             <h2>Featured projects</h2>
-            <div class="row portfolio">
 
-                <div class="column-left">
-                    <h3>eCommerce Website based on the MERN Stack</h3>
-                    <small>React, Redux, Mongo</small>
-                    <p>Build with React and Redux for it’s state management, this is a fully functional e-commerce
-                        website includiding payment, admin user, etc.
+            <div class="project">
+                <div class="row portfolio">
+
+                    <div class="column-left">
+                        <h3>eCommerce Website based on the MERN Stack</h3>
+                        <small>React, Redux, Mongo</small>
+                        <p class="description">Build with React and Redux for it’s state management, this is a fully
+                            functional e-commerce website includiding payment, admin user, etc.
 
 
-                    </p>
-                    <a href="#">Visit mernshop.com</a>
+                        </p>
+                        <a href="https://mernshop-99.herokuapp.com/" target="_blank">Visit mernshop</a>
+
+                    </div>
+
+                    <div class="column-right">
+                        <div class="card"><img src="https://via.placeholder.com/500x360" alt=""></div>
+                    </div>
 
                 </div>
-
-                <div class="column-right">
-                    <div class="card"><img src="https://via.placeholder.com/500x360" alt=""></div>
-                </div>
-
             </div>
 
-            <div class="row portfolio">
+            <div class="project">
+                <div class="row portfolio">
 
-                <div class="column-left">
-                    <h3>eCommerce Website based on the MERN Stack</h3>
-                    <small>React, Redux, Mongo</small>
-                    <p>Build with React and Redux for it’s state management, this is a fully functional e-commerce
-                        website includiding payment, admin user, etc.
+                    <div class="column-left">
+                        <h3>eCommerce Website based on the MERN Stack</h3>
+                        <small>React, Redux, Mongo</small>
+                        <p class="description">Build with React and Redux for it’s state management, this is a fully
+                            functional e-commerce website includiding payment, admin user, etc.
 
 
-                    </p>
-                    <a href="#">Visit mernshop.com</a>
+                        </p>
+                        <a href="https://mernshop-99.herokuapp.com/" target="_blank">Visit mernshop</a>
+
+                    </div>
+
+                    <div class="column-right">
+                        <div class="card"><img src="https://via.placeholder.com/500x360" alt=""></div>
+                    </div>
 
                 </div>
-
-                <div class="column-right">
-                    <div class="card"><img src="https://via.placeholder.com/500x360" alt=""></div>
-                </div>
-
             </div>
 
-            <div class="row portfolio">
+            <div class="project">
+                <div class="row portfolio">
 
-                <div class="column-left">
-                    <h3>eCommerce Website based on the MERN Stack</h3>
-                    <small>React, Redux, Mongo</small>
-                    <p>Build with React and Redux for it’s state management, this is a fully functional e-commerce
-                        website includiding payment, admin user, etc.
+                    <div class="column-left">
+                        <h3>eCommerce Website based on the MERN Stack</h3>
+                        <small>React, Redux, Mongo</small>
+                        <p class="description">Build with React and Redux for it’s state management, this is a fully
+                            functional e-commerce website includiding payment, admin user, etc.
 
 
-                    </p>
-                    <a href="#">Visit mernshop.com</a>
+                        </p>
+                        <a href="https://mernshop-99.herokuapp.com/" target="_blank">Visit mernshop</a>
+
+                    </div>
+
+                    <div class="column-right">
+                        <div class="card"><img src="https://via.placeholder.com/500x360" alt=""></div>
+                    </div>
 
                 </div>
-
-                <div class="column-right">
-                    <div class="card"><img src="https://via.placeholder.com/500x360" alt=""></div>
-                </div>
-
             </div>
+
+
         </div>
     </section>
     <!-- PORTFOLIO END  -->
 
     <!-- ABOUT  -->
-    <section class="greetings">
+    <section class="about" id="about">
         <div class="container">
             <h2>About me</h2>
 
@@ -157,21 +175,86 @@
     <!-- ABOUT END  -->
 
     <!-- BLOG  -->
-    <section class="greetings">
+    <section class="blog" id="blog">
         <div class="container">
             <h2>Blog</h2>
 
-            <div class="row">
+            <div class="gallery-wrap">
+                <h3 class="gallery-title">Featured posts</h3>
+                <div class="gallery">
 
-                <div class="column-left">
-                    card
+                    <div class="card">
+                        <div class="card-content">
+                            <h4>
+                                Blog article title
+                            </h4>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Placeat corrupti quis corporis maiores? Deserunt dolores sit
+                                aliquam maxime possimus perspiciatis earum, asperiores, itaque
+                                ab voluptatum amet, facilis vero ex voluptate.
+                            </p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#">Read more</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-content">
+                            <h4>
+                                Blog article title
+                            </h4>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Placeat corrupti quis corporis maiores? Deserunt dolores sit
+                                aliquam maxime possimus perspiciatis earum, asperiores, itaque
+                                ab voluptatum amet, facilis vero ex voluptate. Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit.
+                                Placeat corrupti quis corporis maiores? Deserunt dolores sit
+                                aliquam maxime possimus perspiciatis earum, asperiores, itaque
+                                ab voluptatum amet, facilis vero ex voluptate.
+                            </p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#">Read more</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-content">
+                            <h4>
+                                Blog article title
+                            </h4>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Placeat corrupti quis corporis maiores? Deserunt dolores sit
+                                aliquam maxime possimus perspiciatis earum, asperiores, itaque
+                                ab voluptatum amet, facilis vero ex voluptate.
+                            </p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#">Read more</a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-content">
+                            <h4>
+                                Blog article title
+                            </h4>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Placeat corrupti quis corporis maiores? Deserunt dolores sit
+                                aliquam maxime possimus perspiciatis earum, asperiores, itaque
+                                ab voluptatum amet, facilis vero ex voluptate.
+                            </p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#">Read more</a>
+                        </div>
+                    </div>
                 </div>
-
-                <div class="column-right">
-                    card
-                </div>
-
             </div>
+
 
 
         </div>
@@ -180,8 +263,25 @@
     <!-- BLOG END  -->
 
     <!-- FOOTER  -->
-    <footer>footer</footer>
+    <footer class="footer">
+        <div class="social-media">
+            <a href="https://github.com/renebitter" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/rene-bitter/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </footer>
     <!-- FOOTER END  -->
 </body>
+<script>
+    window.onscroll = function () { fixNavbar() };
+    var navbar = document.getElementById("navbar");
+
+    function fixNavbar() {
+        if (window.pageYOffset >= 400) {
+            navbar.classList.add("sticky")
+        } else {
+            navbar.classList.remove("sticky");
+        }
+    }
+</script>
 
 </html>
