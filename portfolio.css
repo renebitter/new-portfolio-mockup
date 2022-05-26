@@ -1,3 +1,12 @@
+.portfolio .card img {
+  border-radius: 5px;
+}
+
+.portfolio small {
+  font-style: italic;
+  color: #616161;
+}
+
 .portfolio-links {
   display: flex;
   flex-direction: row;
@@ -17,11 +26,12 @@
 }
 
 .portfolio .project {
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 .portfolio .column-right {
-  margin-top: 50px;
+  max-width: 500px;
+  margin: 50px auto 0;
 }
 
 .portfolio .description {
@@ -43,14 +53,5 @@
   .portfolio .column-right {
     width: 50%;
     margin-top: 0;
-  }
-
-  .portfolio .card img {
-    border-radius: 5px;
-  }
-
-  .portfolio small {
-    font-style: italic;
-    color: #616161;
   }
 }
