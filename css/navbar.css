@@ -95,8 +95,7 @@
 
   .nav-menu {
     display: flex;
-    justify-content: space-around;
-    width: 360px;
+    width: 40%;
   }
 
   .nav-menu .link-wrapper {
