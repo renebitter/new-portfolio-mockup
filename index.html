@@ -5,13 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/general.css" />
-    <link rel="stylesheet" href="/navbar.css" />
-    <link rel="stylesheet" href="/greeting.css" />
-    <link rel="stylesheet" href="/portfolio.css" />
-    <link rel="stylesheet" href="/about.css" />
-    <link rel="stylesheet" href="/blog.css" />
-    <link rel="stylesheet" href="/footer.css" />
+    <link rel="stylesheet" href="./css/all.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,6 +21,55 @@
 </head>
 
 <body>
+    <!-- Modal Backdrop -->
+    <div class="backdrop"></div>
+    <!-- Modal Backdrop End -->
+
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <h4>Contact me</h4>
+            <div class="row">
+                <form id="contactForm" class="contact-form">
+                    <div class="row">
+                        <div class="input-field">
+                            <label for="name">Name</label>
+                            <input id="name" type="text" class="validate" />
+
+                        </div>
+                        <div class="input-field">
+                            <label for="email">Email</label>
+                            <input id="email" type="email" class="validate" />
+
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="input-field input-message">
+                            <label for="icon_prefix2">Your message here...</label>
+                            <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <a href="#!" class="
+                                send-message
+                                modal-close
+                                
+                                btn btn-filled
+                              ">
+                            Send message
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Structure End -->
+
+
+
     <!-- NAVBAR  -->
     <div class="navbar" id="navbar">
         <div class="container">
@@ -36,7 +79,7 @@
                     <a href="#about" onclick="navMenu()">About</a>
                     <a href="#portfolio" onclick="navMenu()">Portfolio</a>
                     <a href="#blog" onclick="navMenu()">Blog</a>
-                    <a href="#" onclick="navMenu()">Contact</a>
+                    <a href="#" onclick="navMenu()" contact-modal>Contact</a>
                 </div>
             </nav>
             <a href="javascript:void(0);" class="icon" onclick="navMenu()">
@@ -52,7 +95,7 @@
             <div class="row">
 
                 <div class="column-right profile-pic">
-                    <img src="/profile-pic.png" alt="">
+                    <img src="./img/profile-pic.png" alt="">
                 </div>
 
                 <div class="column-left">
@@ -62,7 +105,7 @@
                     <p> I'm fluent in English, German, Portuguese and Javascript.</p>
                     <div class="cta-buttons">
                         <a href="#portfolio" class="btn btn-outlined">My Work</a>
-                        <a href="#" class="btn btn-filled">Let's Talk</a>
+                        <a href="#" class="btn btn-filled" contact-modal>Let's Talk</a>
                     </div>
                 </div>
 
@@ -80,9 +123,9 @@
                 <div class="row portfolio">
 
                     <div class="column-left">
-                        <h3>eCommerce Website based on the MERN Stack</h3>
-                        <small>React, Redux, Mongo</small>
-                        <p class="description">Build with React and Redux for it’s state management, this is a fully
+                        <h3>Fullstack eCommerce Website based on the MERN Stack</h3>
+                        <small>React, Redux, Mongo, Node, Express</small>
+                        <p class="description">Build with React and Redux for it's state management, this is a fully
                             functional e-commerce website includiding payment, admin user, etc.
 
 
@@ -111,18 +154,16 @@
                 <div class="row portfolio">
 
                     <div class="column-left">
-                        <h3>eCommerce Website based on the MERN Stack</h3>
-                        <small>React, Redux, Mongo</small>
-                        <p class="description">Build with React and Redux for it’s state management, this is a fully
-                            functional e-commerce website includiding payment, admin user, etc.
-
-
+                        <h3>Bolg Website using Next.js</h3>
+                        <small>Next.js</small>
+                        <p class="description">Static website using Next.js's getStaticProps() & getStaticPaths().
                         </p>
 
                         <div class="portfolio-links">
-                            <a href="https://mernshop-99.herokuapp.com/" target="_blank"><i class="fas fa-link"></i>
+                            <a href="https://nextjs-blog-renebitter.vercel.app/" target="_blank"><i
+                                    class="fas fa-link"></i>
                                 Live</a>
-                            <a href="https://github.com/renebitter/mernshop" target="_blank"><i
+                            <a href="https://github.com/renebitter/nextjs-blog" target="_blank"><i
                                     class="fab fa-github"></i>
                                 Github</a>
                         </div>
@@ -142,12 +183,9 @@
                 <div class="row portfolio">
 
                     <div class="column-left">
-                        <h3>eCommerce Website based on the MERN Stack</h3>
-                        <small>React, Redux, Mongo</small>
-                        <p class="description">Build with React and Redux for it’s state management, this is a fully
-                            functional e-commerce website includiding payment, admin user, etc.
-
-
+                        <h3>Fullstack Logger App using the MERN Stack</h3>
+                        <small>React, Redux, Mongo, Node, Express</small>
+                        <p class="description">CRUD functionality
                         </p>
 
                         <div class="portfolio-links">
@@ -182,28 +220,28 @@
             <div class="row">
 
                 <div class="column-left">
-                    <p>Besides Web Development I have a diverse working experience ranging from airfreight logistics at
-                        Frankfurt airport to
-                        customer support in tech companies around Europe and Brazil
 
-                    </p>
 
                     <p>
                         Moved by the desire to work with something creative I started learning Web Development in 2017.
-                        I started my developer carreer with a great emphasis on e-commerce as a Shopware Frontend
-                        Developer
-                        and later specilized in React and it's ecosystem.
+                        I started my developer career with a great emphasis on e-commerce as a Shopware Frontend
+                        Developer and later specialized in React and it's ecosystem.
+                    </p>
+
+                    <p>Besides Web Development I have a diverse working experience ranging from airfreight logistics at
+                        the
+                        Frankfurt Airport to customer support in tech companies around Europe and Brazil.
                     </p>
 
                     <p>
                         As a Brazilian-German I appreciate diversity as well as discovering and experiencing new
-                        cultures. Loving nature and being outdoors makes my favorite past-time activities hiking and
+                        cultures. Loving nature and being outdoors makes my favorite pastime hiking and
                         mountain climbing.
                     </p>
                 </div>
 
                 <div class="column-right profile-pic">
-                    <img src="/profile-pic.png" alt="">
+                    <img src="./img/profile-pic.png" alt="">
                 </div>
 
             </div>
@@ -312,28 +350,9 @@
     </footer>
     <!-- FOOTER END  -->
 </body>
-<script>
-    window.onscroll = function () { fixNavbar() };
-    const navbar = document.getElementById("navbar");
 
-    function fixNavbar() {
-        if (window.pageYOffset >= 400) {
-            navbar.classList.add("sticky")
-        } else {
-            navbar.classList.remove("sticky");
-        }
-    }
-</script>
-
-<script>
-    function navMenu() {
-        var x = document.getElementById("navMenu");
-        if (x.className === "nav-menu") {
-            x.className += " responsive";
-        } else {
-            x.className = "nav-menu";
-        }
-    }
-</script>
+<script src="./js/navbar-sticky.js"></script>
+<script src="./js/navbar-mobile.js"></script>
+<script src="./js/modal.js"></script>
 
 </html>

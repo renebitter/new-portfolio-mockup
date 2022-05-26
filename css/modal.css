@@ -1,0 +1,73 @@
+.modal {
+  display: none;
+  box-shadow: 0 1px 4px rgb(0 0 0 / 20%);
+  border-radius: 6px;
+  background-color: white;
+  padding: 1rem;
+  text-align: center;
+  max-width: 5500px;
+  z-index: 101;
+  position: fixed;
+  top: 20vh;
+  left: calc(50% - 15rem);
+}
+
+.modal .row {
+  gap: 30px;
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.modal .row input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #9e9e9e;
+  border-radius: 0;
+  outline: none;
+  height: 3rem;
+  width: 100%;
+  font-size: 16px;
+  margin: 0 0 8px 0;
+  padding: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+/* .modal .row textarea {
+  padding: 0.8rem 0 0.8rem 0;
+  min-height: 3rem;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #9e9e9e;
+  outline: none;
+  height: 3rem;
+  width: 100%;
+  font-size: 16px;
+  margin: 0 0 8px 0;
+  padding: 0;
+  box-shadow: none;
+} */
+
+.modal .input-message {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.modal .row textarea {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #9e9e9e;
+  outline: none;
+}
+
+.backdrop {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
